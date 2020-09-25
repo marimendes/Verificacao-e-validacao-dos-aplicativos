@@ -1,17 +1,8 @@
-# Welcome to MkDocs
+# Verificação e Validação dos Aplicativos de Governo
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Esta wiki é destinada a documentação dos testes feitos nos aplicativos de governo.
+A linguagem utilizada para a documentação desses testes foi [**Gherkin**](https://cucumber.io/docs/gherkin/reference/). A linguagem Gherkin permite um entedimento tanto por parte dos desenvolvedores quanto dos stakholders.
 
-## Commands
+Os artefatos aqui registrados foram propostos para a disciplina de Trabalho de Conclusão de Curso da Universidade de Brasília.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
