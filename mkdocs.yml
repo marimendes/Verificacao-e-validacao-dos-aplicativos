@@ -1,4 +1,5 @@
-site_name: Verificação e validação dos aplicativos de governo.
+site_name: Verificação e validação dos aplicativos de governo
 nav:
   - Inicio: index.md
   - Gov.Br: govbr.md
+  - Versão 1.0.0: versao1_govbr.md
