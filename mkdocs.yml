@@ -1,5 +1,10 @@
 site_name: Verificação e validação dos aplicativos de governo
-nav:
+pages:
   - Inicio: index.md
   - Gov.Br: govbr.md
-  - Versão 1.0.0: versao1_govbr.md
+  - Versões: 
+    - Versão 1.1.0: 
+      - Capacidade de ir e vir: feature1.md
+      - Experiência do Usuário: feature2.md
+      - Instalação do aplicativo: feature3.md
+
