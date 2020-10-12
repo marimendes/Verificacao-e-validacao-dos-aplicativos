@@ -44,7 +44,7 @@
                                 <ul class="dropdown-menu">
                                     
   <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Versão 1.1.0</a>
+    <a href="#" class="dropdown-item">Versão 1.0.0</a>
     <ul class="dropdown-menu">
             
 <li>
@@ -57,6 +57,24 @@
             
 <li>
     <a href="../feature3/" class="dropdown-item">Instalação do aplicativo</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Versão 1.1.0</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../feature4/" class="dropdown-item">Capacidade de ir e vir</a>
+</li>
+            
+<li>
+    <a href="../feature5/" class="dropdown-item">Forçar falhas nos campos de input</a>
+</li>
+            
+<li>
+    <a href="../feature6/" class="dropdown-item">Experiência do Usuário</a>
 </li>
     </ul>
   </li>
@@ -111,7 +129,8 @@
 <h4 id="cenario-01">Cenário 01</h4>
 <pre><code>Funcionalidade: Tutorial da tela de reconhecimento facial
 
-O cenário ocorre quando o usuário deseja fazer o reconhecimento facial e é levado para o tutorial. Porém, não tem nenhuma seta na página indicando para o usuário que ele deve arrastar pra o lado para prosseguir.
+O cenário ocorre quando o usuário deseja fazer o reconhecimento facial e é levado para o tutorial. 
+Porém, não tem nenhuma seta na página indicando para o usuário que ele deve arrastar pra o lado para prosseguir.
 
 DADO que eu esteja na tela de reconhecimento facial
 E clique em prosseguir
@@ -121,11 +140,11 @@ ENTÃO eu permaneço na mesma página, pois não tem nenhuma seta ou botão me i
 
 
 </code></pre>
-
 <h4 id="cenario-02">Cenário 02</h4>
 <pre><code>Funcionalidade: Reconhecimento facial
 
-O cenário ocorre quando o usuário está realizando o reconhecimento facial, porém ao enviar a foto a qualidade da imagem é reduzida e a validação falha.
+O cenário ocorre quando o usuário está realizando o reconhecimento facial, 
+porém ao enviar a foto a qualidade da imagem é reduzida e a validação falha.
 
 DADO que eu entre na etapa de validação facial
 E realize o procedimento de Prova de Vida em um ambiente bem iluminado
@@ -137,22 +156,22 @@ E ocorre erro na validação facial.
 
 
 </code></pre>
-
 <h4 id="cenario-03">Cenário 03</h4>
 <pre><code>Funcionalidade: Termos de Uso
 
-O cenário ocorre quando o usuário está na tela de termos de uso e aparece a sigla &quot;LGPD&quot;, mas não é informado para o usuário o significado dessa sigla.
+O cenário ocorre quando o usuário está na tela de termos de uso e aparece a sigla &quot;LGPD&quot;, 
+mas não é informado para o usuário o significado dessa sigla.
 
 DADO que eu esteja na tela de termos de uso do aplicativo
 E me deparo com a sigla &quot;LGPD&quot;
 ENTÃO eu recuso os termos de uso, pois não sei o que essa sigla significa.
 
 </code></pre>
-
 <h4 id="cenario-04">Cenário 04</h4>
 <pre><code>Funcionalidade: Validação facial
 
-O cenário ocorre quando o usuário, que não tem CNH, tenta fazer o acesso ao aplicativo utilizando a validação facial e não consegue. 
+O cenário ocorre quando o usuário, que não tem CNH, tenta fazer o acesso ao aplicativo 
+utilizando a validação facial e não consegue. 
 
 Não há nenhuma mensagem no aplicativo informando que esse meio de entrada só funciona pra quem tem CNH.
 

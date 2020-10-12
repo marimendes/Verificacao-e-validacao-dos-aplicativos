@@ -4,7 +4,8 @@
 ``` 
 Funcionalidade: Tutorial da tela de reconhecimento facial
 
-O cenário ocorre quando o usuário deseja fazer o reconhecimento facial e é levado para o tutorial. Porém, não tem nenhuma seta na página indicando para o usuário que ele deve arrastar pra o lado para prosseguir.
+O cenário ocorre quando o usuário deseja fazer o reconhecimento facial e é levado para o tutorial. 
+Porém, não tem nenhuma seta na página indicando para o usuário que ele deve arrastar pra o lado para prosseguir.
 
 DADO que eu esteja na tela de reconhecimento facial
 E clique em prosseguir
@@ -20,7 +21,8 @@ ENTÃO eu permaneço na mesma página, pois não tem nenhuma seta ou botão me i
 ``` 
 Funcionalidade: Reconhecimento facial
 
-O cenário ocorre quando o usuário está realizando o reconhecimento facial, porém ao enviar a foto a qualidade da imagem é reduzida e a validação falha.
+O cenário ocorre quando o usuário está realizando o reconhecimento facial, 
+porém ao enviar a foto a qualidade da imagem é reduzida e a validação falha.
 
 DADO que eu entre na etapa de validação facial
 E realize o procedimento de Prova de Vida em um ambiente bem iluminado
@@ -38,7 +40,8 @@ E ocorre erro na validação facial.
 ``` 
 Funcionalidade: Termos de Uso
 
-O cenário ocorre quando o usuário está na tela de termos de uso e aparece a sigla "LGPD", mas não é informado para o usuário o significado dessa sigla.
+O cenário ocorre quando o usuário está na tela de termos de uso e aparece a sigla "LGPD", 
+mas não é informado para o usuário o significado dessa sigla.
 
 DADO que eu esteja na tela de termos de uso do aplicativo
 E me deparo com a sigla "LGPD"
@@ -52,7 +55,8 @@ ENTÃO eu recuso os termos de uso, pois não sei o que essa sigla significa.
 ``` 
 Funcionalidade: Validação facial
 
-O cenário ocorre quando o usuário, que não tem CNH, tenta fazer o acesso ao aplicativo utilizando a validação facial e não consegue. 
+O cenário ocorre quando o usuário, que não tem CNH, tenta fazer o acesso ao aplicativo 
+utilizando a validação facial e não consegue. 
 
 Não há nenhuma mensagem no aplicativo informando que esse meio de entrada só funciona pra quem tem CNH.
 

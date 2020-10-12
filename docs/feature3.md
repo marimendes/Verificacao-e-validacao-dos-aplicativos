@@ -4,7 +4,8 @@
 ``` 
 Funcionalidade: Instalar o aplicativo na google store
 
-O cenário ocorre quando o usuário tenta fazer a instalção do aplicativo pela google store, mas aparece uma mensagem de erro e o usuário não consegue realizar o download.
+O cenário ocorre quando o usuário tenta fazer a instalção do aplicativo pela google store, 
+mas aparece uma mensagem de erro e o usuário não consegue realizar o download.
 
 O modelo do celular é um Moto E5 play Android - 8.1.0
 

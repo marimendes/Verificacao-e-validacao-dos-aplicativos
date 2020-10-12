@@ -3,8 +3,14 @@ pages:
   - Inicio: index.md
   - Gov.Br: govbr.md
   - Versões: 
-    - Versão 1.1.0: 
+    - Versão 1.0.0: 
       - Capacidade de ir e vir: feature1.md
       - Experiência do Usuário: feature2.md
       - Instalação do aplicativo: feature3.md
+    - Versão 1.1.0: 
+      - Capacidade de ir e vir: feature4.md
+      - Forçar falhas nos campos de input: feature5.md
+      - Experiência do Usuário: feature6.md
+
+
 

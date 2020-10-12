@@ -7,15 +7,15 @@
         
         
         
-        <link rel="shortcut icon" href="/img/favicon.ico">
-        <title>Verificação e validação dos aplicativos de governo</title>
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Forçar falhas nos campos de input - Verificação e validação dos aplicativos de governo</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
-        <script src="/js/jquery-1.10.2.min.js" defer></script>
-        <script src="/js/bootstrap.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
@@ -23,7 +23,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="/.">Verificação e validação dos aplicativos de governo</a>
+                <a class="navbar-brand" href="..">Verificação e validação dos aplicativos de governo</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -34,12 +34,12 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href="/." class="nav-link">Inicio</a>
+                                <a href=".." class="nav-link">Inicio</a>
                             </li>
                             <li class="navitem">
-                                <a href="/govbr/" class="nav-link">Gov.Br</a>
+                                <a href="../govbr/" class="nav-link">Gov.Br</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Versões <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -48,15 +48,15 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="/feature1/" class="dropdown-item">Capacidade de ir e vir</a>
+    <a href="../feature1/" class="dropdown-item">Capacidade de ir e vir</a>
 </li>
             
 <li>
-    <a href="/feature2/" class="dropdown-item">Experiência do Usuário</a>
+    <a href="../feature2/" class="dropdown-item">Experiência do Usuário</a>
 </li>
             
 <li>
-    <a href="/feature3/" class="dropdown-item">Instalação do aplicativo</a>
+    <a href="../feature3/" class="dropdown-item">Instalação do aplicativo</a>
 </li>
     </ul>
   </li>
@@ -66,15 +66,15 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="/feature4/" class="dropdown-item">Capacidade de ir e vir</a>
+    <a href="../feature4/" class="dropdown-item">Capacidade de ir e vir</a>
 </li>
             
 <li>
-    <a href="/feature5/" class="dropdown-item">Forçar falhas nos campos de input</a>
+    <a href="./" class="dropdown-item active">Forçar falhas nos campos de input</a>
 </li>
             
 <li>
-    <a href="/feature6/" class="dropdown-item">Experiência do Usuário</a>
+    <a href="../feature6/" class="dropdown-item">Experiência do Usuário</a>
 </li>
     </ul>
   </li>
@@ -88,6 +88,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../feature4/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../feature6/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -95,15 +105,65 @@
 
         <div class="container">
             <div class="row">
-
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
     </div>
 
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#forcar-falhas-nos-campos-de-input" class="nav-link">Forçar falhas nos campos de input</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
 
+<h2 id="forcar-falhas-nos-campos-de-input">Forçar falhas nos campos de input</h2>
+<h4 id="cenario-01">Cenário 01</h4>
+<pre><code>Funcionalidade: Capacidade de ir e vir
+
+O cenário ocorre quando o usuário acessa aos programas existentes no aplicativo. 
+Ao realizar o login com CPF (mesmo não possuindo CNH) o usuário é
+encaminhado diretamente à página de validação facial, mas não reconhece o
+rosto do usuário, não avançando e não tendo opção de entrar na página de
+programas existentes.
+
+DADO que eu clico em “Entrar com gov.br”, mesmo não tenho CNH
+QUANDO acesso a página dos serviços públicos digitais
+Então sou levada para validação facial
+E após o programa de validação não me reconhecer, não sou redirecionado para
+a tela dos programas existentes.
+
+</code></pre>
+<h4 id="cenario-02">Cenário 02</h4>
+<pre><code>Funcionalidade: Capacidade de ir e vir
+
+O cenário ocorre quando o usuário acessa a página de login e consegue acessar com sucesso a
+plataforma em que estão disponíveis os serviços públicos, como o INSS,
+certificado digital entre outros, mas não é possível acessá-los. Aparece somente um
+ícone com a imagem da logo do serviço e quando tentamos acessar um serviço
+em específico, o usuário é redirecionado para uma página em branco, não
+informando se ocorreu algum erro. Este problema ocorre com todos os serviços
+desde que o usuário possua validação facial.
+
+DADO que eu desejo ter acesso aos programas disponibilizados pelo app
+E informo CPF e senha
+E faço a validação facial
+QUANDO acesso a página com os programas disponíveis
+ENTÃO aparece os ícones dos serviços públicos digitais
+QUANDO tento acessar um serviço em específico clicando no ícone,
+ENTÃO sou redirecionado para uma página em branco, não informando se
+ocorreu algum erro e não avança.
+
+
+</code></pre></div>
             </div>
         </div>
 
@@ -112,11 +172,11 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "/",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="/js/base.js" defer></script>
-        <script src="/search/main.js" defer></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
