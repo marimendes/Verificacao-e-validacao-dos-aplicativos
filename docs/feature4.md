@@ -2,7 +2,7 @@
 #### Cenário 01
 
 ``` 
-Funcionalidade: Capacidade de ir e vir
+Funcionalidade: Acessar aplicativo
 
 O cenário ocorre quando o usuário avança para uma tela, mas decide retornar a tela anterior.
 
@@ -18,7 +18,7 @@ ENTÃO eu volto pra tela inicial, mas aparece uma mensagem de erro.
 #### Cenário 02
 
 ``` 
-Funcionalidade: Capacidade de ir e vir
+Funcionalidade: Acessar conta
 
 O cenário ocorre quando o usuário avança para uma tela, preenche os seus dados, mas decide retornar a tela anterior.
 
@@ -35,7 +35,7 @@ ENTÃO eu volto pra tela inicial, mas aparece uma mensagem de erro.
 ####  Cenário 03
 
 ```
-Funcionalidade: Capacidade de ir e vir
+Funcionalidade: Criar conta
 
 O cenário ocorre quando o usuário decide criar a sua conta usando a opção do Bando do Brasil.
 Porém um erro ocorre no meio do processo de criação e o usuário não consegue prosseguir.

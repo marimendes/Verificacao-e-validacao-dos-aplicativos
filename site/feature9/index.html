@@ -4,26 +4,26 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Verificação e validação dos aplicativos de governo</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Experiência do Usuário - Verificação e validação dos aplicativos de governo</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">Verificação e validação dos aplicativos de governo</a>
+                <a class="navbar-brand" href="..">Verificação e validação dos aplicativos de governo</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -33,13 +33,13 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Inicio</a>
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Inicio</a>
                             </li>
                             <li class="navitem">
-                                <a href="govbr/" class="nav-link">Gov.Br</a>
+                                <a href="../govbr/" class="nav-link">Gov.Br</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Versões <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -48,15 +48,15 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="feature1/" class="dropdown-item">Capacidade de ir e vir</a>
+    <a href="../feature1/" class="dropdown-item">Capacidade de ir e vir</a>
 </li>
             
 <li>
-    <a href="feature2/" class="dropdown-item">Experiência do Usuário</a>
+    <a href="../feature2/" class="dropdown-item">Experiência do Usuário</a>
 </li>
             
 <li>
-    <a href="feature3/" class="dropdown-item">Instalação do aplicativo</a>
+    <a href="../feature3/" class="dropdown-item">Instalação do aplicativo</a>
 </li>
     </ul>
   </li>
@@ -66,15 +66,15 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="feature4/" class="dropdown-item">Capacidade de ir e vir</a>
+    <a href="../feature4/" class="dropdown-item">Capacidade de ir e vir</a>
 </li>
             
 <li>
-    <a href="feature6/" class="dropdown-item">Experiência do Usuário</a>
+    <a href="../feature6/" class="dropdown-item">Experiência do Usuário</a>
 </li>
             
 <li>
-    <a href="feature5/" class="dropdown-item">Forçar falhas nos campos de input</a>
+    <a href="../feature5/" class="dropdown-item">Forçar falhas nos campos de input</a>
 </li>
     </ul>
   </li>
@@ -84,15 +84,15 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="feature8/" class="dropdown-item">Atualizar o aplicativo</a>
+    <a href="../feature8/" class="dropdown-item">Atualizar o aplicativo</a>
 </li>
             
 <li>
-    <a href="feature7/" class="dropdown-item">Capacidade de ir e vir</a>
+    <a href="../feature7/" class="dropdown-item">Capacidade de ir e vir</a>
 </li>
             
 <li>
-    <a href="feature9/" class="dropdown-item">Experiência do Usuário</a>
+    <a href="./" class="dropdown-item active">Experiência do Usuário</a>
 </li>
     </ul>
   </li>
@@ -107,12 +107,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href="../feature7/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="govbr/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -134,7 +134,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#inicio" class="nav-link">Inicio</a>
+            <li class="nav-item" data-level="2"><a href="#experiencia-do-usuario" class="nav-link">Experiência do Usuário</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -143,10 +143,87 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="inicio">Inicio</h1>
-<p>Esta wiki é destinada a documentação dos testes feitos no aplicativo Meu Gov.br.
-A linguagem utilizada para a documentação desses testes foi <a href="https://cucumber.io/docs/gherkin/reference/"><strong>Gherkin</strong></a>. A linguagem Gherkin permite um entedimento claro tanto por parte dos desenvolvedores quanto dos stakholders, facilitando assim a comunicação entre todos.</p>
-<p>Os artefatos aqui registrados foram propostos para a disciplina de Trabalho de Conclusão de Curso da Universidade de Brasília.</p></div>
+<h2 id="experiencia-do-usuario">Experiência do Usuário</h2>
+<h4 id="cenario-01">Cenário 01</h4>
+<pre><code>
+Funcionalidade: Atualizar o aplicativo
+
+Cenário ocorre quando o usuário do sistema realiza o login no aplicativo.
+Ao se conectar e ir para a tela de notificação o usuário deve receber uma série de 
+mensagens de autorização.
+
+DADO que o usuário esteja na tela de login
+QUANDO preencher o campo de CPF
+E a senha
+ENTÃO o usuário faz o login ao aplicativo
+E vai para a tela de notificações, não encontrando nenhuma mensagem
+
+
+</code></pre>
+<h4 id="cenario-02">Cenário 02</h4>
+<pre><code>
+Funcionalidade: Listagem de serviços públicos
+
+Este cenário ocorre na situação em que o usuário não possui CNH e não consegue realizar a validação facial. 
+Após realizar essa tentativa, o usuário se encontra em uma página de listagem de serviços públicos. 
+Ao encontrar esta página, o usuário
+não consegue sair mais, ficando preso na página.
+
+CONTEXTO: Dado que o usuário não possua CNH e e não consiga realizar a validação facial.
+
+DADO que o usuário esteja na tela de ícones dos serviços públicos disponíveis (após tentar realizar a validação)
+E deseja voltar usando a tecla voltar do celular 
+E clique na tecla voltar repetidas vezes
+ENTÃO o usuário permanece na tela de ícones de serviços 
+E não é possível sair da tela de ícones
+
+
+</code></pre>
+<h4 id="cenario-03">Cenário 03</h4>
+<pre><code>
+Funcionalidade: Recuperação de senha 
+
+Este cenário ocorre quando o usuário solicita a opção de &quot;esqueci minha senha&quot;. 
+Após clicar nessa opção, o usuário é levado pra tela onde escolhe como irá recuperar a sua senha. 
+Os icones dessa tela estão todos desalinhados. 
+
+DADO que o usuário esteja na tela de login
+E preencha o CPF avançando pra próxima tela
+E clique em &quot;esqueci minha senha&quot;
+ENTÃO aparecem as opções para o usuário escolher como recuperar a senha
+E os icones estão desalinhados.
+
+</code></pre>
+<h4 id="cenario-04">Cenário 04</h4>
+<pre><code>
+Funcionalidade: Ler o QR CODE 
+
+Este cenário ocorre quando o usuário solicita a opção de &quot;ler o QR code&quot; na tela inicial.
+Após passar pelo tutorial e clicar em &quot;ler o QR code&quot;, o usuário é levado para a tela onde o irá ler o QR code.
+Ao clicar em cancelar, o usuário é levado para uma tela de erro.
+
+DADO que o usuário esteja na tela inicial
+E escolha a opção &quot;Ler QR code&quot;
+E passa pelo tutorial
+E clique no botão &quot;Ler QR code&quot;
+ENTÃO a camera é habilitada para que o usuário possa ler o QR code
+MAS o usuário seleciona a opção de &quot;cancelar&quot; 
+E é levado para uma tela de erro ao invés de apenas voltar para a tela inicial
+
+</code></pre>
+<h4 id="cenario-05">Cenário 05</h4>
+<pre><code>
+Funcionalidade: Tela de informações (FAQ)
+
+No cenário em que o usuário deseja ter mais informações sobre o app e, clica no &quot; O que é o Meu gov.br&quot;, 
+o mesmo não encontra informações relevantes sobre a funcionalidade e usabilidade do app.
+
+DADO que o usuário deseja ter informações sobre o App
+E clica em &quot; O que é o Meu gov.br &quot; que se encontra no Menu
+ENTÃO aparecem informações
+MAS as informações não são suficientes para que o usuário possa saber como o app funcionae o que ele poderá encontrar em seu acesso
+
+</code></pre></div>
             </div>
         </div>
 
@@ -155,11 +232,11 @@ A linguagem utilizada para a documentação desses testes foi <a href="https://c
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -227,8 +304,3 @@ A linguagem utilizada para a documentação desses testes foi <a href="https://c
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.1.2
-Build Date UTC : 2020-10-12 20:53:37.576856+00:00
--->

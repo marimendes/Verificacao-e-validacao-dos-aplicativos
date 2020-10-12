@@ -9,8 +9,14 @@ pages:
       - Instalação do aplicativo: feature3.md
     - Versão 1.1.0: 
       - Capacidade de ir e vir: feature4.md
-      - Forçar falhas nos campos de input: feature5.md
       - Experiência do Usuário: feature6.md
+      - Forçar falhas nos campos de input: feature5.md
+    - Versão 1.2.0:
+      - Atualizar o aplicativo: feature8.md 
+      - Capacidade de ir e vir: feature7.md
+      - Experiência do Usuário: feature9.md
+      
+
 
 
 

@@ -2,7 +2,7 @@
 #### Cenário 01
 
 ``` 
-Funcionalidade: Capacidade de ir e vir
+Funcionalidade: Progamas existentes
 
 O cenário ocorre quando o usuário acessa aos programas existentes no aplicativo. 
 Ao realizar o login com CPF (mesmo não possuindo CNH) o usuário é
@@ -21,7 +21,7 @@ a tela dos programas existentes.
 #### Cenário 02
 
 ``` 
-Funcionalidade: Capacidade de ir e vir
+Funcionalidade: Validação facial
 
 O cenário ocorre quando o usuário acessa a página de login e consegue acessar com sucesso a
 plataforma em que estão disponíveis os serviços públicos, como o INSS,

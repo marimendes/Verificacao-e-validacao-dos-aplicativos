@@ -2,7 +2,7 @@
 #### Cenário 01
 
 ``` 
-Funcionalidade: Capacidade de ir e vir
+Funcionalidade: Acessar aplicativo
 
 O cenário ocorre quando o usuário avança para uma tela, mas decide retornar a tela anterior.
 
@@ -18,7 +18,7 @@ ENTÃO eu volto pra tela inicial, mas aparece uma mensagem de erro.
 #### Cenário 02
 
 ``` 
-Funcionalidade: Capacidade de ir e vir
+Funcionalidade: Acessar conta
 
 O cenário ocorre quando o usuário avança para uma tela, preenche os seus dados, mas decide retornar a tela anterior.
 
