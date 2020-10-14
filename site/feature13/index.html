@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Instalação do aplicativo - Verificação e validação dos aplicativos de governo</title>
+        <title>Experiência do Usuário - Verificação e validação dos aplicativos de governo</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -56,7 +56,7 @@
 </li>
             
 <li>
-    <a href="./" class="dropdown-item active">Instalação do aplicativo</a>
+    <a href="../feature3/" class="dropdown-item">Instalação do aplicativo</a>
 </li>
     </ul>
   </li>
@@ -114,7 +114,7 @@
 </li>
             
 <li>
-    <a href="../feature13/" class="dropdown-item">Experiência do Usuário</a>
+    <a href="./" class="dropdown-item active">Experiência do Usuário</a>
 </li>
     </ul>
   </li>
@@ -129,12 +129,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../feature2/" class="nav-link">
+                                <a rel="prev" href="../feature12/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../feature4/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -156,7 +156,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#instalacao-do-aplicativo" class="nav-link">Instalação do aplicativo</a>
+            <li class="nav-item" data-level="2"><a href="#experiencia-do-usuario" class="nav-link">Experiência do Usuário</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -165,19 +165,111 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="instalacao-do-aplicativo">Instalação do aplicativo</h2>
+<h2 id="experiencia-do-usuario">Experiência do Usuário</h2>
 <h4 id="cenario-01">Cenário 01</h4>
-<pre><code>Funcionalidade: Instalar o aplicativo na google store
+<pre><code>
+Funcionalidade: Recuperar senha
 
-O cenário ocorre quando o usuário tenta fazer a instalção do aplicativo pela google store, 
-mas aparece uma mensagem de erro e o usuário não consegue realizar o download.
+Este cenário ocorre quando o usuário solicita a opção de &quot;esqueci minha senha&quot;. 
+Após clicar nessa opção, o usuário é levado pra tela onde escolhe como irá recuperar a sua senha. 
+Os icones dessa tela estão todos desalinhados. 
 
-O modelo do celular é um Moto E5 play Android - 8.1.0
+DADO que o usuário esteja na tela de login
+E preencha o CPF avançando pra próxima tela
+E clique em &quot;esqueci minha senha&quot;
+ENTÃO aparecem as opções para o usuário escolher como recuperar a senha
+E os icones estão desalinhados.
 
-DADO que eu esteja na google store
-E clico em baixar &quot;Meu Gov.br&quot;
-ENTÃO aparece uma mensagem de erro me impedindo de instalar o aplicativo.
+</code></pre>
+<h4 id="cenario-02">Cenário 02</h4>
+<pre><code>
+Funcionalidade: Ler QR code
 
+Este cenário ocorre quando o usuário solicita a opção de &quot;ler o QR code&quot; na tela inicial.
+Após passar pelo tutorial e clicar em &quot;ler o QR code&quot;, o usuário é levado para a tela onde o irá ler o QR code.
+Ao clicar em cancelar, o usuário é levado para uma tela de erro.
+
+DADO que o usuário esteja na tela inicial
+E escolha a opção &quot;Ler QR code&quot;
+E passa pelo tutorial
+E clique no botão &quot;Ler QR code&quot;
+ENTÃO a camera é habilitada para que o usuário possa ler o QR code
+MAS o usuário seleciona a opção de &quot;cancelar&quot; 
+E é levado para uma tela de erro ao invés de apenas voltar para a tela inicial
+
+</code></pre>
+<h4 id="cenario-03">Cenário 03</h4>
+<pre><code>
+Funcionalidade: FAQ
+
+No cenário em que o usuário deseja ter mais informações sobre o app e, clica no &quot; O que é o Meu gov.br&quot;, 
+o mesmo não encontra informações relevantes sobre a funcionalidade e usabilidade do app.
+
+DADO que o usuário deseja ter informações sobre o App
+E clica em &quot; O que é o Meu gov.br &quot; que se encontra no Menu
+ENTÃO aparecem informações 
+MAS as informações não são suficientes para que o usuário possa saber como o app funciona 
+E o que ele poderá encontrar em seu acesso
+
+
+</code></pre>
+<h4 id="cenario-04">Cenário 04</h4>
+<pre><code>
+Funcionalidade: Notificações e Autorizações
+
+Este cenário ocorre quando o usuário faz login no aplicativo e solicita a opção de &quot;Notificaçãoes&quot; 
+e logo em seguida clica em &quot;Autorizações&quot;
+Após isso o usuário é levado para a tela de Autorizações e aparece uma mensagem informando 
+&quot;Você não possui pedidos de autorização!&quot;, mas não explica o que são essas autorizações.
+
+DADO que o usuário faça login no aplicativo Meu Gov.br
+E clica no botão de &quot;Notificações&quot;
+E seleciona a opção de &quot;Autorizações&quot;
+ENTÃO o usuário vai pra uma tela de autorizações
+
+
+</code></pre>
+<h4 id="cenario-05">Cenário 05</h4>
+<pre><code>
+Funcionalidade: Validação facial
+
+Cenário ocorre quando o usuário deseja recuperar sua senha pelo método de validação facial.
+Após fazer a Validação Facial, a tela com o campo para preencher a emissão da CNH tem seu botão
+&quot;voltar&quot; sem função ao clicar.
+
+DADO que o usuário esteja na tela de login
+E preencha o CPF avançando pra próxima tela
+E clique em &quot;esqueci minha senha&quot;
+ENTÃO aparecem as opções para o usuário escolher como recuperar a senha
+E ele selecione o método &quot;Validação Facial no aplicativo Meu gov.br&quot;
+E verifique o Captcha
+E passe pelo tutorial
+E realize a validação facial
+E clique em &quot;Voltar&quot;
+ENTÃO nada acontece.
+
+
+
+</code></pre>
+<h4 id="cenario-06">Cenário 06</h4>
+<pre><code>
+Funcionalidade: Validação facial
+
+Cenário ocorre quando o usuário deseja recuperar sua senha pelo método de validação facial.
+Após fazer a Validação Facial e preencher a última emissão da CNH, caso o usuário aperte em &quot;voltar&quot;
+a aplicação irá retornar para uma página em branco.
+
+DADO que o usuário esteja na tela de login
+E preencha o CPF avançando pra próxima tela
+E clique em &quot;esqueci minha senha&quot;
+ENTÃO aparecem as opções para o usuário escolher como recuperar a senha
+E ele selecione o método &quot;Validação Facial no aplicativo Meu gov.br&quot;
+E verifique o Captcha
+E passe pelo tutorial
+E realize a validação facial
+E preencha a data da última emissão de sua CNH
+E clique em &quot;Voltar&quot;
+ENTÃO a aplicação irá retornar para uma página em branco
 
 </code></pre></div>
             </div>
