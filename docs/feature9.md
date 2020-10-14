@@ -3,7 +3,7 @@
 
 ```
 
-Funcionalidade: Atualizar o aplicativo
+Funcionalidade: Notificação
 
 Cenário ocorre quando o usuário do sistema realiza o login no aplicativo.
 Ao se conectar e ir para a tela de notificação o usuário deve receber uma série de 
