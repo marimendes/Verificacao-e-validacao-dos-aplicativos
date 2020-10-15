@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Validação facial - Verificação e validação dos aplicativos de governo</title>
+        <title>Experiência do Usuário - Verificação e validação dos aplicativos de governo</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -100,7 +100,7 @@
 </li>
             
 <li>
-    <a href="./" class="dropdown-item active">Validação facial</a>
+    <a href="../feature11/" class="dropdown-item">Validação facial</a>
 </li>
     </ul>
   </li>
@@ -124,7 +124,7 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../feature14/" class="dropdown-item">Experiência do Usuário</a>
+    <a href="./" class="dropdown-item active">Experiência do Usuário</a>
 </li>
             
 <li>
@@ -143,12 +143,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../feature10/" class="nav-link">
+                                <a rel="prev" href="../feature13/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../feature12/" class="nav-link">
+                                <a rel="next" href="../feature15/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -170,7 +170,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#validacao-facial" class="nav-link">Validação facial</a>
+            <li class="nav-item" data-level="2"><a href="#experiencia-do-usuario" class="nav-link">Experiência do Usuário</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -179,44 +179,42 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="validacao-facial">Validação facial</h2>
+<h2 id="experiencia-do-usuario">Experiência do Usuário</h2>
 <h4 id="cenario-01">Cenário 01</h4>
 <pre><code>
-Funcionalidade: Validação facial
+Funcionalidade: Botão voltar da tela de notificações 
 
-O cenário ocorre ao ralizar validação facial sem CNH.
+Este cenário ocorre quando o usuário acessa a tela de notificações e tenta voltar pra a página anterior.
+Entretanto o botão voltar é dar cor branca e se camufla muito bem na foto do usuário que é de cor preta e branca.
+Tornando assim o botão quase invisivel.
 
-DADO que o usuário esteja na tela de login
-E preencher o campo de CPF
-E preencher campo senha
-QUANDO clicar no botão avançar
-ENTÃO abre a tela de ícones dos serviços públicos disponíveis
-E não é possível realizar a validação facial 
+DADO que eu acesse a tela de notificações, clicando no ícone se sino.
+QUANDO eu decido voltar pra página anterior
+ENTÃO eu não encontro o botão de voltar na tela
 
 </code></pre>
 <h4 id="cenario-02">Cenário 02</h4>
-<pre><code>Funcionalidade: Validação facial
+<pre><code>
+Funcionalidade: Carteiras 
 
-O cenário ocorre ao realizar validação facial.
+Este cenário ocorre quando o usuário acessa a tela chamada de &quot;carteiras&quot;.
+Entretanto a tela aparece vazia, sem informação.
 
-DADO que o usuário esteja na tela de validação facial
-E realize os comandos para realizar a prova de vida
-QUANDO erra algum comando
-ENTÃO todos os testes realizados anteriormente são zerados 
-E não é possível finalizar com sucesso o teste de validação facial
+DADO que eu faça o Login
+E acessa a tela chamada &quot;carteiras&quot;
+ENTÃO a tela de &quot;carteira&quot; aparece em branco, sem nenhuma informação.
 
 </code></pre>
 <h4 id="cenario-03">Cenário 03</h4>
-<pre><code>Funcionalidade: Validação facial
+<pre><code>
+Funcionalidade: Acessar aplicativo
 
-O cenário ocorre quando o usuário finaliza a validação facial.
+Este cenário ocorre por todo o aplicativo, algumas funcionalidades levam até 10 minutos 
+pra abrir e outras nem abrem.
 
-DADO que o usuário esteja na tela de validação facial
-E realize todos os comandos de prova de vida
-QUANDO finaliza os comandos e o app pede para tirar a foto 
-E o usuário move o rosto ultrapassando o limite de espaço da marcação indicada
-ENTÃO reinicia novamente os comandos de prova de vida
-E não é possível finalizar com sucesso o teste de validação facial
+DADO que eu acesse a tela de login
+QUANDO eu decido clicar em &quot;entrar com gov.br&quot;
+ENTÃO a tela fica carregando por vários minutos até prosseguir pra próxima tela
 
 </code></pre></div>
             </div>
