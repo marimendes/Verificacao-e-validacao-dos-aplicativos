@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Capacidade de ir e vir - Verificação e validação dos aplicativos de governo</title>
+        <title>Erro comportamental - Verificação e validação dos aplicativos de governo</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -66,7 +66,7 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="./" class="dropdown-item active">Capacidade de ir e vir</a>
+    <a href="../feature4/" class="dropdown-item">Capacidade de ir e vir</a>
 </li>
             
 <li>
@@ -128,7 +128,7 @@
 </li>
             
 <li>
-    <a href="../feature15/" class="dropdown-item">Erro comportamental</a>
+    <a href="./" class="dropdown-item active">Erro comportamental</a>
 </li>
     </ul>
   </li>
@@ -157,12 +157,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../feature3/" class="nav-link">
+                                <a rel="prev" href="../feature14/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../feature6/" class="nav-link">
+                                <a rel="next" href="../feature16/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -184,7 +184,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#capacidade-de-ir-e-vir" class="nav-link">Capacidade de ir e vir</a>
+            <li class="nav-item" data-level="2"><a href="#erro-comportamental" class="nav-link">Erro comportamental</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -193,51 +193,34 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="capacidade-de-ir-e-vir">Capacidade de ir e vir</h2>
+<h2 id="erro-comportamental">Erro comportamental</h2>
 <h4 id="cenario-01">Cenário 01</h4>
-<pre><code>Funcionalidade: Acessar aplicativo
+<pre><code>
+Funcionalidade: Leitura dos Termos de uso ao criar conta.
 
-O cenário ocorre quando o usuário avança para uma tela, mas decide retornar a tela anterior.
+Cenário ocorre quando o usuário deseja ler os Termos de uso ao tentar criar sua
+conta.
 
-DADO que eu esteja na tela de login do aplicativo
-E clico no botão &quot;Entrar com Gov.br&quot;
-QUANDO eu avanço pra próxima tela
-E decido voltar clicando na seta no canto superior esquerdo
-ENTÃO eu volto pra tela inicial, mas aparece uma mensagem de erro.
-
+DADO que o usuário esteja na tela de login
+E clique no botão &quot;Crie sua conta&quot;
+E clique em &quot;Validação Facial no App Meu gov.br&quot;
+E clique em &quot;Termos de uso&quot;
+E clique em &quot;Fechar&quot;
+ENTÃO é apresentado um popup erro &quot;Sistema de origem desconhecido&quot;.
 
 </code></pre>
 <h4 id="cenario-02">Cenário 02</h4>
-<pre><code>Funcionalidade: Acessar conta
+<pre><code>
+Funcionalidade: Dúvidas frenquentes
 
-O cenário ocorre quando o usuário avança para uma tela, preenche os seus dados, mas decide retornar a tela anterior.
+Cenário ocorre quando o usuário deseja acessar a página de dúvidas frequentes, 
+mas a página está fora do ar.
 
-DADO que eu esteja na tela de login do aplicativo
-E clico no botão &quot;Entrar com Gov.br&quot;
-QUANDO eu avanço pra próxima tela
-E preencho os meus dados no campo de CPF e senha
-E decido voltar clicando na seta no canto superior esquerdo
-ENTÃO eu volto pra tela inicial, mas aparece uma mensagem de erro.
+DADO que o usuário esteja na tela de login
+E clique no botão &quot;Dúvidas Frequentes&quot;
+ENTÃO o usuário é levado pra próxima tela e aparace a mensagem &quot;Página da Web não disponível&quot;
 
 
-</code></pre>
-<h4 id="cenario-03">Cenário 03</h4>
-<pre><code>Funcionalidade: Criar conta
-
-O cenário ocorre quando o usuário decide criar a sua conta usando a opção do Bando do Brasil.
-Porém um erro ocorre no meio do processo de criação e o usuário não consegue prosseguir.
-
-DADO que eu clico em “Entrar com gov.br”
-QUANDO clico em “Crie sua conta”
-E escolho a opção “Banco do Brasil”
-E autorizo os termos de uso
-E preencho os meus dados da conta do Banco do Brasil
-E preencho com o código de autorização que eu recebi
-ENTÃO eu sou informada que já tenho uma conta no Meu Gov.br,
-mas continuo na tela de cadastro
-E ao tentar prosseguir preenchendo o meu nome, aparece uma
-mensagem de erro.
-E eu não consigo nem avançar ou voltar para outra tela.
 </code></pre></div>
             </div>
         </div>
